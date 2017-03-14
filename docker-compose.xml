@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  ventrilo:
+    build: .
+    image: ventrilo
+    ports:
+      - "3784:3784"
+      - "3784:3784/udp"
+    container_name: ventrilo
+    restart: always
